@@ -36,12 +36,12 @@ body {
 
 .puzzle-grid {
     display: grid;
-    grid-template-rows: repeat(13, 40px);
+    grid-template-rows: repeat(16, 40px);
 }
 
 .row {
     display: grid;
-    grid-template-columns: repeat(13, 40px);
+    grid-template-columns: repeat(16, 40px);
     box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
 }
 
@@ -137,43 +137,6 @@ button {
 
 }
 
-#show-answers-btn1:hover~.h1 {
-    visibility: visible;
-}
-#show-answers-btn2:hover~.h2{
-    visibility: visible;
-}
-#show-answers-btn3:hover~.h3 {
-    visibility: visible;
-}
-#show-answers-btn4:hover~.h4 {
-    visibility: visible;
-}
-#show-answers-btn5:hover~.h5 {
-    visibility: visible;
-}
-#show-answers-btn6:hover~.h6 {
-    visibility: visible;
-}
-#show-answers-btn7:hover~.h7 {
-    visibility: visible;
-}
-#show-answers-btn8:hover~.h8 {
-    visibility: visible;
-}
-#show-answers-btn9:hover~.h9 {
-    visibility: visible;
-}
-#show-answers-btn10:hover~.h10 {
-    visibility: visible;
-}
-/* #show-answers-btn11:hover~.h11 {
-    visibility: visible;
-} */
-#show-answers-btn11:hover~#show-answers-btn11 {
-    visibility: hidden;
-}
-
 button:hover {
     background-color: #fff;
     border: 2px solid green;
@@ -210,12 +173,12 @@ tr:nth-child(even) {
 
     .puzzle-grid {
         display: grid;
-        grid-template-rows: repeat(13, 40px);
+        grid-template-rows: repeat(16, 40px);
     }
 
     .row {
         display: grid;
-        grid-template-columns: repeat(13, 40px);
+        grid-template-columns: repeat(16, 40px);
     }
 
     .cell {
@@ -254,12 +217,12 @@ tr:nth-child(even) {
 
     .puzzle-grid {
         display: grid;
-        grid-template-rows: repeat(13, 27px);
+        grid-template-rows: repeat(16, 27px);
     }
 
     .row {
         display: grid;
-        grid-template-columns: repeat(13, 27px);
+        grid-template-columns: repeat(16, 27px);
     }
 
     .cell {
@@ -304,15 +267,14 @@ tr:nth-child(even) {
 
         <div class="puzzle-grid">
             <h1 style="position: absolute; top: 2px;">
-                         Word Puzzle Game</h1>
+                         Compliance Crossword Challenge!</h1>
             <div class="row">
                 <div class="cell inactive"></div>
                 <div class="cell inactive"></div>
                 <div class="cell inactive"></div>
-                <div class="cell">
-                    <input type="text" maxlength="1" />
-                    <span class="number">1</span>
-                </div>
+				<div class="cell inactive"></div>
+				<div class="cell inactive"></div>
+                <div class="cell"><input type="text" maxlength="1" /><span class="number">1</span></div>
                 <div class="cell inactive"></div>
                 <div class="cell inactive"></div>
                 <div class="cell inactive"></div>
@@ -320,6 +282,7 @@ tr:nth-child(even) {
                 <div class="cell inactive"></div>
                 <div class="cell inactive"></div>
                 <div class="cell inactive"></div>
+				<div class="cell inactive"></div>
                 <div class="cell inactive"></div>
                 <div class="cell inactive"></div>
             </div>
@@ -327,10 +290,9 @@ tr:nth-child(even) {
                 <div class="cell inactive"></div>
                 <div class="cell inactive"></div>
                 <div class="cell inactive"></div>
-                <div class="cell">
-                    <input type="text" maxlength="1" />
-
-                </div>
+				<div class="cell inactive"></div>
+                <div class="cell inactive"></div>
+                <div class="cell"><input type="text" maxlength="1" /></div>
                 <div class="cell inactive"></div>
                 <div class="cell inactive"></div>
                 <div class="cell inactive"></div>
@@ -338,341 +300,254 @@ tr:nth-child(even) {
                 <div class="cell inactive"></div>
                 <div class="cell inactive"></div>
                 <div class="cell inactive"></div>
+				<div class="cell inactive"></div>
                 <div class="cell inactive"></div>
                 <div class="cell inactive"></div>
             </div>
             <div class="row">
                 <div class="cell inactive"></div>
+                <div class="cell"><input type="text" maxlength="1" /><span class="number">2</span></div>
                 <div class="cell inactive"></div>
+                <div class="cell"><input type="text" maxlength="1" /><span class="number">3</span></div>
                 <div class="cell inactive"></div>
-                <div class="cell">
-                    <input type="text" maxlength="1" />
-
-                </div>
-                <div class="cell inactive"></div>
-                <div class="cell inactive"></div>
-                <div class="cell inactive"></div>
-                <div class="cell inactive"></div>
-                <div class="cell">
-                    <input type="text" maxlength="1" />
-                    <span class="number">2</span>
-                </div>
+                <div class="cell"><input type="text" maxlength="1" /></div>
                 <div class="cell inactive"></div>
                 <div class="cell inactive"></div>
                 <div class="cell inactive"></div>
                 <div class="cell inactive"></div>
-
+                <div class="cell inactive"></div>
+                <div class="cell inactive"></div>
+                <div class="cell inactive"></div>
+				<div class="cell inactive"></div>
+                <div class="cell inactive"></div>
+                <div class="cell inactive"></div>
             </div>
             <div class="row">
-
-                <div class="cell">
-                    <input type="text" maxlength="1" />
-                    <span class="number">3</span>
-                </div>
                 <div class="cell inactive"></div>
+                <div class="cell"><input type="text" maxlength="1" /></div>
                 <div class="cell inactive"></div>
-                <div class="cell">
-                    <input type="text" maxlength="1" />
-
-                </div>
+                <div class="cell"><input type="text" maxlength="1" /></div>
                 <div class="cell inactive"></div>
-                <div class="cell">
-                    <input type="text" maxlength="1" />
-                    <span class="number">4</span>
-                </div>
-                <div class="cell">
-                    <input type="text" maxlength="1" />
-                    <span class="number">5</span>
-                </div>
-                <div class="cell">
-                    <input type="text" maxlength="1" />
-                </div>
-                <div class="cell">
-                    <input type="text" maxlength="1" />
-
-                </div>
-                <div class="cell">
-                    <input type="text" maxlength="1" />
-                </div>
+                <div class="cell"><input type="text" maxlength="1" /></div>
                 <div class="cell inactive"></div>
                 <div class="cell inactive"></div>
                 <div class="cell inactive"></div>
-
+                <div class="cell"><input type="text" maxlength="1" /><span class="number">4</span></div>
+                <div class="cell inactive"></div>
+                <div class="cell inactive"></div>
+                <div class="cell inactive"></div>
+				<div class="cell inactive"></div>
+                <div class="cell inactive"></div>
+                <div class="cell inactive"></div>
             </div>
             <div class="row">
-                <div class="cell">
-                    <input type="text" maxlength="1" />
-
-                </div>
                 <div class="cell inactive"></div>
+                <div class="cell"><input type="text" maxlength="1" /></div>
                 <div class="cell inactive"></div>
-
-                <div class="cell">
-                    <input type="text" maxlength="1" />
-
-                </div>
+                <div class="cell"><input type="text" maxlength="1" /></div>
                 <div class="cell inactive"></div>
-                <div class="cell inactive"></div>
-                <div class="cell">
-                    <input type="text" maxlength="1" />
-
-                </div>
-                <div class="cell inactive"></div>
-                <div class="cell">
-                    <input type="text" maxlength="1" />
-
-                </div>
+                <div class="cell"><input type="text" maxlength="1" /></div>
                 <div class="cell inactive"></div>
                 <div class="cell inactive"></div>
                 <div class="cell inactive"></div>
+                <div class="cell"><input type="text" maxlength="1" /></div>
                 <div class="cell inactive"></div>
-
+                <div class="cell inactive"></div>
+                <div class="cell inactive"></div>
+				<div class="cell inactive"></div>
+                <div class="cell inactive"></div>
+                <div class="cell inactive"></div>
             </div>
             <div class="row">
-
-                <div class="cell">
-                    <input type="text" maxlength="1" />
-                    <span class="number">6</span>
-                </div>
-                <div class="cell">
-                    <input type="text" maxlength="1" />
-
-                </div>
-                <div class="cell">
-                    <input type="text" maxlength="1" />
-
-                </div>
-                <div class="cell">
-                    <input type="text" maxlength="1" />
-
-                </div>
-                <div class="cell">
-                    <input type="text" maxlength="1" />
-
-                </div>
-                <div class="cell">
-                    <input type="text" maxlength="1" />
-
-                </div>
-
-                <div class="cell">
-                    <input type="text" maxlength="1" />
-
-                </div>
+				<div class="cell"><input type="text" maxlength="1" /><span class="number">5</span></div>
+				<div class="cell"><input type="text" maxlength="1" /></div>
+				<div class="cell"><input type="text" maxlength="1" /></div>
+				<div class="cell"><input type="text" maxlength="1" /></div>
+				<div class="cell"><input type="text" maxlength="1" /></div>
+				<div class="cell"><input type="text" maxlength="1" /></div>
+				<div class="cell"><input type="text" maxlength="1" /></div>
+				<div class="cell"><input type="text" maxlength="1" /></div>
+				<div class="cell"><input type="text" maxlength="1" /></div>
+				<div class="cell"><input type="text" maxlength="1" /></div>
+				<div class="cell"><input type="text" maxlength="1" /></div>
                 <div class="cell inactive"></div>
-                <div class="cell">
-                    <input type="text" maxlength="1" />
-
-                </div>
+				<div class="cell inactive"></div>
+                <div class="cell inactive"></div>
+				<div class="cell"><input type="text" maxlength="1" /><span class="number">6</span></div>
+                <div class="cell inactive"></div>
+            </div>
+            <div class="row">
+				<div class="cell inactive"></div>
+				<div class="cell"><input type="text" maxlength="1" /></div>
+				<div class="cell inactive"></div>
+				<div class="cell"><input type="text" maxlength="1" /></div>
+				<div class="cell inactive"></div>
+				<div class="cell"><input type="text" maxlength="1" /></div>
+				<div class="cell inactive"></div>
+				<div class="cell inactive"></div>
+				<div class="cell inactive"></div>
+				<div class="cell"><input type="text" maxlength="1" /></div>
                 <div class="cell inactive"></div>
                 <div class="cell inactive"></div>
+				<div class="cell inactive"></div>
+                <div class="cell inactive"></div>
+                <div class="cell"><input type="text" maxlength="1" /></div>
+                <div class="cell inactive"></div>
+            </div>
+            <div class="row">
+				<div class="cell inactive"></div>
+				<div class="cell"><input type="text" maxlength="1" /></div>
+				<div class="cell inactive"></div>
+				<div class="cell"><input type="text" maxlength="1" /></div>
+				<div class="cell inactive"></div>
+				<div class="cell"><input type="text" maxlength="1" /></div>
+				<div class="cell inactive"></div>
+				<div class="cell inactive"></div>
+				<div class="cell inactive"></div>
+				<div class="cell"><input type="text" maxlength="1" /></div>
                 <div class="cell inactive"></div>
                 <div class="cell inactive"></div>
-
+				<div class="cell inactive"></div>
+                <div class="cell inactive"></div>
+                <div class="cell"><input type="text" maxlength="1" /></div>
+                <div class="cell inactive"></div>
             </div>
 
 
             <div class="row">
+				<div class="cell inactive"></div>
+				<div class="cell"><input type="text" maxlength="1" /></div>
+				<div class="cell inactive"></div>
+				<div class="cell"><input type="text" maxlength="1" /></div>
+				<div class="cell inactive"></div>
+				<div class="cell inactive"></div>
+				<div class="cell inactive"></div>
+				<div class="cell inactive"></div>
+				<div class="cell inactive"></div>
+				<div class="cell"><input type="text" maxlength="1" /></div>
                 <div class="cell inactive"></div>
                 <div class="cell inactive"></div>
+				<div class="cell inactive"></div>
                 <div class="cell inactive"></div>
-                <div class="cell">
-                    <input type="text" maxlength="1" />
-
-                </div>
+                <div class="cell"><input type="text" maxlength="1" /></div>
                 <div class="cell inactive"></div>
-                <div class="cell inactive"></div>
-                <div class="cell">
-                    <input type="text" maxlength="1" />
-
-                </div>
-                <div class="cell inactive"></div>
-                <div class="cell inactive">
-
-
-                </div>
-                <div class="cell inactive"></div>
-                <div class="cell inactive"></div>
-                <div class="cell inactive"></div>
-                <div class="cell">
-                    <input type="text" maxlength="1" />
-                    <span class="number">7</span>
-                </div>
-
-            </div>
-            <div class="row">
-                <div class="cell inactive"></div>
-                <div class="cell inactive"></div>
-                <div class="cell inactive"></div>
-                <div class="cell inactive">
-
-
-                </div>
-                <div class="cell inactive"></div>
-                <div class="cell inactive"></div>
-                <div class="cell">
-                    <input type="text" maxlength="1" />
-
-                </div>
-                <div class="cell inactive"></div>
-                <div class="cell inactive">
-
-
-                </div>
-                <div class="cell inactive"></div>
-                <div class="cell inactive"></div>
-                <div class="cell inactive"></div>
-                <div class="cell">
-                    <input type="text" maxlength="1" />
-
-                </div>
-
             </div>
 
 
             <div class="row">
+				<div class="cell inactive"></div>
+				<div class="cell"><input type="text" maxlength="1" /></div>
+				<div class="cell inactive"></div>
+				<div class="cell"><input type="text" maxlength="1" /></div>
+				<div class="cell inactive"></div>
+				<div class="cell"><input type="text" maxlength="1" /><span class="number">7</span></div>
+				<div class="cell"><input type="text" maxlength="1" /></div>
+				<div class="cell"><input type="text" maxlength="1" /></div>
+				<div class="cell"><input type="text" maxlength="1" /></div>
+				<div class="cell"><input type="text" maxlength="1" /></div>
+				<div class="cell"><input type="text" maxlength="1" /></div>
+				<div class="cell"><input type="text" maxlength="1" /></div>
+				<div class="cell"><input type="text" maxlength="1" /></div>
                 <div class="cell inactive"></div>
+                <div class="cell"><input type="text" maxlength="1" /></div>
                 <div class="cell inactive"></div>
-                <div class="cell inactive"></div>
-                <div class="cell inactive"></div>
-                <div class="cell inactive"></div>
-                <div class="cell">
-                    <input type="text" maxlength="1" />
-                    <span class="number">8</span>
-                </div>
-                <div class="cell">
-                    <input type="text" maxlength="1" />
-                </div>
-                <div class="cell">
-                    <input type="text" maxlength="1" />
-
-                </div>
-                <div class="cell">
-                    <input type="text" maxlength="1" />
-
-                </div>
-                <div class="cell">
-                    <input type="text" maxlength="1" />
-                </div>
-                <div class="cell">
-                    <input type="text" maxlength="1" />
-                    <span class="number">9</span>
-                </div>
-                <div class="cell">
-                    <input type="text" maxlength="1" />
-                </div>
-                <div class="cell">
-                    <input type="text" maxlength="1" />
-                </div>
-
             </div>
 
 
             <div class="row">
+				<div class="cell inactive"></div>
+				<div class="cell"><input type="text" maxlength="1" /></div>
+				<div class="cell inactive"></div>
+				<div class="cell"><input type="text" maxlength="1" /></div>
+				<div class="cell inactive"></div>
+				<div class="cell inactive"></div>
+				<div class="cell inactive"></div>
+				<div class="cell inactive"></div>
+				<div class="cell inactive"></div>
+				<div class="cell"><input type="text" maxlength="1" /></div>
                 <div class="cell inactive"></div>
                 <div class="cell inactive"></div>
+				<div class="cell inactive"></div>
                 <div class="cell inactive"></div>
+                <div class="cell"><input type="text" maxlength="1" /></div>
                 <div class="cell inactive"></div>
-                <div class="cell inactive"></div>
-                <div class="cell inactive"></div>
-                <div class="cell">
-                    <input type="text" maxlength="1" />
-                </div>
-                <div class="cell inactive"></div>
-                <div class="cell inactive"></div>
-                <div class="cell inactive"></div>
-                <div class="cell">
-                    <input type="text" maxlength="1" />
-                </div>
-                <div class="cell inactive"></div>
-                <div class="cell">
-                    <input type="text" maxlength="1" />
-                </div>
-
             </div>
 
-
             <div class="row">
-                <div class="cell inactive"></div>
-                <div class="cell inactive"></div>
-                <div class="cell inactive"></div>
-                <div class="cell inactive"></div>
-
-                <div class="cell">
-                    <input type="text" maxlength="1" />
-                    <span class="number">10</span>
-                </div>
-                <div class="cell">
-                    <input type="text" maxlength="1" />
-                </div>
-                <div class="cell">
-                    <input type="text" maxlength="1" />
-                </div>
-                <div class="cell inactive"></div>
-                <div class="cell inactive"></div>
-                <div class="cell">
-                    <input type="text" maxlength="1" />
-                    <span class="number">11</span>
-                </div>
-                <div class="cell">
-                    <input type="text" maxlength="1" />
-                </div>
-                <div class="cell">
-                    <input type="text" maxlength="1" />
-
-                </div>
-                <div class="cell inactive"></div>
-
+				<div class="cell inactive"></div>
+				<div class="cell"><input type="text" maxlength="1" /></div>
+				<div class="cell inactive"></div>
+				<div class="cell"><input type="text" maxlength="1" /></div>
+				<div class="cell inactive"></div>
+				<div class="cell inactive"></div>
+				<div class="cell"><input type="text" maxlength="1" /><span class="number">8</span></div>
+				<div class="cell"><input type="text" maxlength="1" /></div>
+				<div class="cell"><input type="text" maxlength="1" /></div>
+				<div class="cell"><input type="text" maxlength="1" /></div>
+				<div class="cell"><input type="text" maxlength="1" /></div>
+				<div class="cell"><input type="text" maxlength="1" /></div>
+				<div class="cell"><input type="text" maxlength="1" /></div>
+				<div class="cell"><input type="text" maxlength="1" /></div>
+				<div class="cell"><input type="text" maxlength="1" /></div>
+				<div class="cell"><input type="text" maxlength="1" /></div>
 
             </div>
 
             <div class="row">
+				<div class="cell inactive"></div>
+				<div class="cell"><input type="text" maxlength="1" /></div>
+				<div class="cell inactive"></div>
+				<div class="cell"><input type="text" maxlength="1" /></div>
+				<div class="cell inactive"></div>
+				<div class="cell inactive"></div>
+				<div class="cell inactive"></div>
+				<div class="cell inactive"></div>
+				<div class="cell inactive"></div>
+				<div class="cell"><input type="text" maxlength="1" /></div>
                 <div class="cell inactive"></div>
                 <div class="cell inactive"></div>
+				<div class="cell inactive"></div>
                 <div class="cell inactive"></div>
+                <div class="cell"><input type="text" maxlength="1" /></div>
                 <div class="cell inactive"></div>
-                <div class="cell inactive"></div>
-                <div class="cell inactive"></div>
-                <div class="cell inactive"></div>
-                <div class="cell inactive"></div>
-                <div class="cell inactive"></div>
-                <div class="cell inactive"></div>
-                <div class="cell">
-                    <input type="text" maxlength="1" />
-
-                </div>
-                <div class="cell inactive"></div>
-                <div class="cell inactive"></div>
-
             </div>
-
-            <div class="row">
+			<div class="row">
+				<div class="cell inactive"></div>
+				<div class="cell inactive"></div>
+				<div class="cell inactive"></div>
+				<div class="cell"><input type="text" maxlength="1" /></div>
+				<div class="cell inactive"></div>
+				<div class="cell inactive"></div>
+				<div class="cell inactive"></div>
+				<div class="cell inactive"></div>
+				<div class="cell inactive"></div>
+				<div class="cell inactive"></div>
+                <div class="cell inactive"></div>
+                <div class="cell inactive"></div>
+				<div class="cell inactive"></div>
+                <div class="cell inactive"></div>
+                <div class="cell"><input type="text" maxlength="1" /></div>
+                <div class="cell inactive"></div>
+            </div>
+			<div class="row">
+				<div class="cell inactive"></div>
+				<div class="cell inactive"></div>
+				<div class="cell inactive"></div>
+				<div class="cell"><input type="text" maxlength="1" /></div>
+				<div class="cell inactive"></div>
+				<div class="cell inactive"></div>
+				<div class="cell inactive"></div>
+				<div class="cell inactive"></div>
+				<div class="cell inactive"></div>
+				<div class="cell inactive"></div>
+                <div class="cell inactive"></div>
+                <div class="cell inactive"></div>
+				<div class="cell inactive"></div>
                 <div class="cell inactive"></div>
                 <div class="cell inactive"></div>
                 <div class="cell inactive"></div>
-                <div class="cell inactive"></div>
-                <div class="cell inactive"></div>
-                <div class="cell inactive"></div>
-                <div class="cell inactive"></div>
-                <div class="cell inactive"></div>
-                <div class="cell inactive"></div>
-                <div class="cell inactive"></div>
-                <div class="cell">
-                    <input type="text" maxlength="1" />
-
-                </div>
-                <div class="cell inactive"></div>
-                <div class="cell inactive"></div>
-
             </div>
         </div>
-
-
-
-
-
-
-
 
         <div class="clues">
             <h2>Clues</h2>
@@ -683,7 +558,6 @@ tr:nth-child(even) {
                         <th>Clue Number</th>
                         <th>Clue Direction</th>
                         <th>Clue Text</th>
-                        <th>Answer</th>
                     </tr>
                 </thead>
 
@@ -691,113 +565,44 @@ tr:nth-child(even) {
                     <tr>
                         <td>1</td>
                         <td>Down</td>
-                        <td>Fastest land animal</td>
-                        <td><button id="show-answers-btn1">
-                                Show Answer
-                            </button>
-                            <div class="h1">CHEETAH</div>
-                        </td>
+                        <td>Security ___________ -	crucial step of vendor personnel onboarding</td>
                     </tr>
                     <tr>
                         <td>2</td>
                         <td>Down</td>
-                        <td>Starts life as a tadpole</td>
-                        <td><button id="show-answers-btn2">
-                                Show Answer
-                            </button>
-                            <div class="h2">FROG</div>
-                        </td>
+                        <td>__________ auditors have to conduct Exit Audit for Restricted & above or Sensitive Normal & above system</td>
                     </tr>
                     <tr>
                         <td>3</td>
                         <td>Down</td>
-                        <td>Man's best friend</td>
-                        <td><button id="show-answers-btn3">
-                                Show Answer
-                            </button>
-                            <div class="h3">DOG</div>
-                        </td>
+                        <td>Three types of risks: Project, Data and __________</td>
                     </tr>
                     <tr>
                         <td>4</td>
-                        <td>Across</td>
-                        <td>Has black and white stripes</td>
-                        <td><button id="show-answers-btn4">
-                                Show Answer
-                            </button>
-                            <div class="h4">ZEBRA</div>
-                        </td>
+                        <td>Down</td>
+                        <td>WOG ICT __________ Forum - Forum to approve low residual risk</td>
                     </tr>
                     <tr>
                         <td>5</td>
-                        <td>Down</td>
-                        <td>Large animals with a trunk</td>
-                        <td><button id="show-answers-btn5">
-                                Show Answer
-                            </button>
-                            <div class="h5">ELEPHANT</div>
-                        </td>
+                        <td>Across</td>
+                        <td>To be performed when audit findings are identified</td>
                     </tr>
                     <tr>
                         <td>6</td>
-                        <td>Across</td>
-                        <td>Tallest land animal</td>
-                        <td><button id="show-answers-btn6">
-                                Show Answer
-                            </button>
-                            <div class="h6">GIRAFFE</div>
-                        </td>
+                        <td>Down</td>
+                        <td>Security ___________ - Another crucial step of vendor personnel onboarding</td>
                     </tr>
                     <tr>
                         <td>7</td>
-                        <td>Down</td>
-                        <td>King of the jungle</td>
-                        <td><button id="show-answers-btn7">
-                                Show Answer
-                            </button>
-                            <div class="h7">LION</div>
-                        </td>
+                        <td>Across</td>
+                        <td>_________ Control helps to prove that documentation are reviewed on time and regularly.</td>
                     </tr>
                     <tr>
                         <td>8</td>
                         <td>Across</td>
-                        <td>Hopping Australian marsupial</td>
-                        <td><button id="show-answers-btn8">
-                                Show Answer
-                            </button>
-                            <div class="h8">KANGAROOO</div>
-                        </td>
+                        <td>Appointed Vendors should perform annual service management self-______________</td>
                     </tr>
-                    <tr>
-                        <td>9</td>
-                        <td>Down</td>
-                        <td>Large animal with a horn</td>
-                        <td><button id="show-answers-btn9">
-                                Show Answer
-                            </button>
-                            <div class="h9">RHINO</div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>10</td>
-                        <td>Across</td>
-                        <td>Likes to chase mice</td>
-                        <td><button id="show-answers-btn10">
-                                Show Answer
-                            </button>
-                            <div class="h10">CAT</div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>11</td>
-                        <td>Across</td>
-                        <td>Like to roll around in the mud</td>
-                        <td><button id="show-answers-btn11">
-                                Show Answer
-                            </button>
-                            <div class="h11">PIG</div>
-                        </td>
-                    </tr>
+  
                 </tbody>
             </table>
 
