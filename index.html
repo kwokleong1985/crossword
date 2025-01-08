@@ -71,6 +71,15 @@ input[type="text"] {
 	text-align: center;
 }
 
+.winmessage {
+	font-size: 1em;
+	width: 80%;
+	margin: 0 auto;
+	text-align: center;
+	color: red;
+	font-weight: bold;
+}
+
 h1 {
     text-align: center;
     color: green;
@@ -137,7 +146,6 @@ h2 {
 
 button {
     display: block;
-   
     padding: 5px;
     background-color: green;
     color: #fff;
@@ -228,7 +236,7 @@ tr:nth-child(even) {
     .game-container {
         flex-direction: column;
         align-items: center;
-         padding-top: 10px;
+        padding-top: 10px;
         gap: 30px;
     }
 
@@ -277,7 +285,7 @@ tr:nth-child(even) {
     .game-container {
         flex-direction: column;
         align-items: center;
-         padding-top: 10px;
+        padding-top: 10px;
         gap: 30px;
     }
 
@@ -329,7 +337,7 @@ tr:nth-child(even) {
     .game-container {
         flex-direction: column;
         align-items: center;
-         padding-top: 10px;
+        padding-top: 10px;
         gap: 30px;
     }
 
@@ -390,6 +398,7 @@ tr:nth-child(even) {
 	Challenge yourself to the crossword puzzle below! We've thrown in some hints to help you get started. Enter the correct letter in each cell and watch them turn green. Once all the cells are green, bring your card to the crossword station to receive your stamp!
 	</div>
 	<br>
+	<div class="winmessage" id="message" style="display:none;">Congratulations! You have solved the puzzle!</div>
     <div class="game-container">
         <div class="puzzle-grid">
 			<div id="inputContainer">
@@ -674,7 +683,6 @@ tr:nth-child(even) {
 				</div>
 			</div>
         </div>
-
         <div class="clues">
             <h2>Clues</h2>
 
@@ -752,7 +760,19 @@ tr:nth-child(even) {
 				parentCell.classList.remove('green-background');
 			}
 		}
+		checkAllGreen();
 	});
+	
+	
+	function checkAllGreen() {
+            const inputs = inputContainer.querySelectorAll('input');
+            const allGreen = Array.from(inputs).every(input => input.classList.contains('green-background'));
+            if (allGreen) {
+                message.style.display = 'block';
+            } else {
+                message.style.display = 'none';
+            }
+        }
 </script>
 
 
