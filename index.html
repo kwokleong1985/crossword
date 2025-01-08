@@ -64,6 +64,13 @@ input[type="text"] {
 	background-color: #abebc6 ;
 }
 
+.centered-text {
+	font-size: 0.8em;
+	width: 70%;
+	margin: 0 auto;
+	text-align: center;
+}
+
 h1 {
     text-align: center;
     color: green;
@@ -153,7 +160,7 @@ button:hover {
     transition: all .2s ease;
 }
 table {
-  font-family: arial, sans-serif;
+  font-family: 'Poppins', sans-serif;
   border-collapse: collapse;
   width: 100%;
 
@@ -195,19 +202,19 @@ tr:nth-child(even) {
     }
 
     input {
-        width: 40px;
-        height: 40px;
-        font-size: 1rem;
+        width: 38px;
+        height: 38px;
+        font-size: 2rem;
     }
 
     input:focus {
-        height: 40px;
-        width: 40px;
+        height: 38px;
+        width: 38px;
     }
 
     .number {
-        bottom: 47px;
-        font-size: .8rem;
+        bottom: 46px;
+        font-size: .6rem;
     }
 
     .clues {
@@ -215,7 +222,7 @@ tr:nth-child(even) {
     }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 640px) {
     .game-container {
         flex-direction: column;
         align-items: center;
@@ -225,12 +232,12 @@ tr:nth-child(even) {
 
     .puzzle-grid {
         display: grid;
-        grid-template-rows: repeat(16, 24px);
+        grid-template-rows: repeat(16, 27px);
     }
 
     .row {
         display: grid;
-        grid-template-columns: repeat(16, 24px);
+        grid-template-columns: repeat(16, 27px);
     }
 
     .cell {
@@ -246,17 +253,67 @@ tr:nth-child(even) {
     input {
         width: 25px;
         height: 25px;
-        font-size: .5rem;
+        font-size: 1rem;
     }
 
     input:focus {
-        height: 27px;
-        width: 27px;
+        height: 25px;
+        width: 25px;
     }
 
     .number {
         bottom: 35px;
         font-size: .5rem;
+    }
+
+    .clues {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .game-container {
+        flex-direction: column;
+        align-items: center;
+         padding-top: 10px;
+        gap: 30px;
+    }
+
+    .puzzle-grid {
+        display: grid;
+        grid-template-rows: repeat(16, 20px);
+    }
+
+    .row {
+        display: grid;
+        grid-template-columns: repeat(16, 20px);
+    }
+
+    .cell {
+        width: 20px;
+        height: 20px;
+    }
+
+    ol {
+        line-height: 1rem;
+        font-size: 10px;
+    }
+
+    input {
+        width: 18px;
+        height: 18px;
+        font-size: 1rem;
+    }
+
+    input:focus {
+        height: 18px;
+        width: 18px;
+    }
+
+    .number {
+        bottom: 30px;
+        font-size: .4rem;
+		left: 1px;
     }
 
     .clues {
@@ -270,7 +327,15 @@ tr:nth-child(even) {
 </head>
 
 <body>
+	<br><br>
 	<h1 style="top: 2px;">Compliance Crossword Challenge!</h1>
+	<br>
+	
+	<b>Instructions</b>
+	<div class="centered-text">
+	Challenge yourself to the crossword puzzle below! We've thrown in some hints to help you get started. Enter the correct letter in each cell and watch them turn green. Once all the cells are green, bring your card to the crossword station to receive your stamp!
+	</div>
+	<br>
     <div class="game-container">
         <div class="puzzle-grid">
 			<div id="inputContainer">
@@ -280,7 +345,7 @@ tr:nth-child(even) {
 					<div class="cell inactive"></div>
 					<div class="cell inactive"></div>
 					<div class="cell inactive"></div>
-					<div class="cell"><input type="text" data-letter="b" maxlength="1" /><span class="number">1</span></div>
+					<div class="cell"><input type="text" class="green-background" value="B" data-letter="b" maxlength="1" readonly /><span class="number">1</span></div>
 					<div class="cell inactive"></div>
 					<div class="cell inactive"></div>
 					<div class="cell inactive"></div>
@@ -312,7 +377,7 @@ tr:nth-child(even) {
 				</div>
 				<div class="row">
 					<div class="cell inactive"></div>
-					<div class="cell"><input type="text" data-letter="i" maxlength="1" /><span class="number">2</span></div>
+					<div class="cell"><input type="text" class="green-background" value="I" data-letter="i" maxlength="1" readonly /><span class="number">2</span></div>
 					<div class="cell inactive"></div>
 					<div class="cell"><input type="text" data-letter="c" maxlength="1" /><span class="number">3</span></div>
 					<div class="cell inactive"></div>
@@ -446,7 +511,7 @@ tr:nth-child(even) {
 					<div class="cell inactive"></div>
 					<div class="cell"><input type="text" data-letter="c" maxlength="1" /></div>
 					<div class="cell inactive"></div>
-					<div class="cell"><input type="text" data-letter="d" maxlength="1" /><span class="number">7</span></div>
+					<div class="cell"><input class="green-background" type="text" value="D" data-letter="d" maxlength="1" readonly /><span class="number">7</span></div>
 					<div class="cell"><input type="text" data-letter="o" maxlength="1" /></div>
 					<div class="cell"><input type="text" data-letter="c" maxlength="1" /></div>
 					<div class="cell"><input type="text" data-letter="u" maxlength="1" /></div>
@@ -509,7 +574,7 @@ tr:nth-child(even) {
 					<div class="cell inactive"></div>
 					<div class="cell inactive"></div>
 					<div class="cell inactive"></div>
-					<div class="cell"><input type="text" data-letter="s" maxlength="1" /></div>
+					<div class="cell inactive"></div>
 					<div class="cell inactive"></div>
 					<div class="cell inactive"></div>
 					<div class="cell inactive"></div>
@@ -572,22 +637,22 @@ tr:nth-child(even) {
                     <tr>
                         <td>1</td>
                         <td>Down</td>
-                        <td>Security ___________ -	crucial step of vendor personnel onboarding</td>
+                        <td>Security Awareness B_______ - crucial step of vendor personnel onboarding</td>
                     </tr>
                     <tr>
                         <td>2</td>
                         <td>Down</td>
-                        <td>__________ auditors have to conduct Exit Audit for Restricted & above or Sensitive Normal & above system</td>
+                        <td>I__________ auditors have to conduct Exit Audit for Restricted & above or Sensitive Normal & above system</td>
                     </tr>
                     <tr>
                         <td>3</td>
                         <td>Down</td>
-                        <td>Three types of risks: Project, Data and __________</td>
+                        <td>Three types of risks: Project, Data and _____________</td>
                     </tr>
                     <tr>
                         <td>4</td>
                         <td>Down</td>
-                        <td>WOG ICT __________ Forum - Forum to approve low residual risk</td>
+                        <td>WOG ICT _________ Forum - Forum to approve low residual risk</td>
                     </tr>
                     <tr>
                         <td>5</td>
@@ -597,17 +662,17 @@ tr:nth-child(even) {
                     <tr>
                         <td>6</td>
                         <td>Down</td>
-                        <td>Security ___________ - Another crucial step of vendor personnel onboarding</td>
+                        <td>Security _________ - Another crucial step of vendor personnel onboarding</td>
                     </tr>
                     <tr>
                         <td>7</td>
                         <td>Across</td>
-                        <td>_________ Control helps to prove that documentation are reviewed on time and regularly.</td>
+                        <td>D_______ Control helps to prove that documentation are reviewed on time and regularly.</td>
                     </tr>
                     <tr>
                         <td>8</td>
                         <td>Across</td>
-                        <td>Appointed Vendors should perform annual service management self-______________</td>
+                        <td>Appointed Vendors should perform annual service management self-__________</td>
                     </tr>
   
                 </tbody>
