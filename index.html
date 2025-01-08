@@ -769,10 +769,26 @@ tr:nth-child(even) {
             const allGreen = Array.from(inputs).every(input => input.classList.contains('green-background'));
             if (allGreen) {
                 message.style.display = 'block';
+				changeInactiveColors('gold','gold');
             } else {
                 message.style.display = 'none';
+				changeInactiveColors('green','green');
+
             }
         }
+		
+		
+	function changeInactiveColors(backgroundColor, borderColor) {
+		const inactiveElements = document.querySelectorAll('.cell.inactive');
+		inactiveElements.forEach(element => {
+			element.style.backgroundColor = backgroundColor;
+			element.style.borderColor = borderColor;
+		});
+	}
+	
+
+
+
 </script>
 
 
