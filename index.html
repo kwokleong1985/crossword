@@ -743,10 +743,13 @@ tr:nth-child(even) {
 		if (event.target.tagName.toLowerCase() === 'input') {
 			const specificLetter = event.target.getAttribute('data-letter');
 			const value = event.target.value.toLowerCase();
+			const parentCell = event.target.parentElement;
 			if (value.includes(specificLetter)) {
 				event.target.classList.add('green-background');
+				parentCell.classList.add('green-background');
 			} else {
 				event.target.classList.remove('green-background');
+				parentCell.classList.remove('green-background');
 			}
 		}
 	});
